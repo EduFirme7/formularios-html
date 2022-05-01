@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset</title>
+    <style>
+        fieldset{
+            border: 2px solid rgb(245, 122, 7);
+            margin-bottom: 20px;
+            background-color: rgb(226, 214, 158);
+        }
+
+        legend{
+            background-color: rgb(184, 118, 33);
+            color: aliceblue;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        button{
+            padding: 8px;
+            border: 1px solid rgb(184, 118, 33);
+        }
+        button:hover{
+            background-color: lightgray;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Primeiro nome: <br>
+                <input type="text" name="nome" required> <br>
+            </label>
+
+            <label>
+                Sobrenome: <br>
+                <input type="text" name="lastname"> <br>
+            </label>
+
+            <label>
+                Idade: <br>
+                <input type="number" name="age" min="18" max="120" ><br>
+            </label>
+
+            <label>
+                Data: <br>
+                <input type="date" name="birthdate" required>
+            </label> <br>
+
+            <label>
+                Foto: <br>
+                <input type="file" name="arquivo" accept="image/*,.jpg,.png" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label>
+                Nome da empresa: <br>
+                <input type="text" name="company"> <br>
+            </label> 
+
+            <label>
+                Cargo na empresa: <br>
+                <input type="text" name="jobcompany"> <br>
+            </label>
+        </fieldset>
+
+        <button>Cadastrar</button>
+    </form>
+</body>
+</html>

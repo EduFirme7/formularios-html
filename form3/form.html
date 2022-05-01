@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Nome:
+                <input type="text" placeholder="nome completo"> <br>
+            </label>
+            <label>
+                Endereço:
+                <input type="text" placeholder=""> <br>
+            </label>
+            <label>
+                Cidade:
+                <input type="text"> <br>
+            </label>
+            <label for="Estados">
+                Estados:
+                <select id="Estados">
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Ceara">Ceará</option>
+                    <option value="bahia">Bahía</option>
+                    <option value="Paraiba">Paraíba</option>
+                    <option value="amazonas">Amazonas</option>
+                </select>
+            </label>
+        </fieldset> <br> <br>
+
+        <fieldset id="dados">
+            <legend>Dados Profissionais</legend>
+
+            <label>Natureza do Cargo</label> <br>
+
+            <input type="radio" name="tdados" checked>
+            <label for="">Gerência</label>
+           
+            <input type="radio" name="tdados" checked>
+            <label for="">Financeiro</label>
+
+            <input type="radio" name="tdados" checked>
+            <label for="">Recepção</label>
+           
+            <input type="radio" name="tdados" checked>
+            <label for="">Administração</label>
+
+            <input type="radio" name="tdados" checked>
+            <label for="">Jurídico</label>
+
+            <br> <br>
+
+            <legend>Área de interesse</legend>
+
+            <input type="checkbox" id="tecnologia" name="tecnologia" checked>
+            <label for="">Computação</label>
+        
+
+            <input type="checkbox" id="" checked>
+            <label for="">Biologia</label>
+
+            <input type="checkbox" checked>
+            <label for="">Meio Ambiente</label>
+
+            <input type="checkbox" checked>
+            <label for="">Engenharia</label>
+
+            <input type="checkbox" checked>
+            <label for="">História</label>
+            <br> <br>
+
+            <label for="">
+                Mini-curriculo:
+                <textarea name="curriculo" id="" cols="90" rows="10"></textarea>
+            </label>
+        </fieldset> <br> <br>
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+
+    </form>
+</body>
+</html>
